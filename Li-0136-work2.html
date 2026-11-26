@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>尤克里里社招新网站</title>
+<style>
+  body { background-color:#FFF8EC; font-family: "Microsoft YaHei", 宋体, Arial, sans-serif; margin:0; color:#4a3b2a; }
+  h1 { color:#8B5A2B; text-align:center; }
+  h2 { color:#A0522D; border-left:8px solid #DEB887; padding-left:10px; }
+  p { line-height:1.9; text-indent:2em; }
+  .banner { background-color:#F5DEB3; padding:30px 20px 20px 20px; }
+  .nav { background-color:#8B5A2B; padding:10px; text-align:center; }
+  .nav a { color:#FFFFFF; text-decoration:none; margin:0 15px; font-weight:bold; }
+  .nav a:hover { color:#FFD700; }
+  .section { margin:30px 40px; }
+  table { border-collapse:collapse; margin:0 auto; }
+  td, th { padding:8px 14px; }
+  .back { text-align:right; margin-top:15px; }
+  .back a { color:#8B5A2B; }
+  /* 左上角音乐播放按钮 */
+  #musicbox { position:fixed; top:10px; left:10px; z-index:99; background-color:#A0522D; padding:6px 12px; border-radius:20px; box-shadow:2px 2px 6px #999; }
+  #musicbox button { background:none; border:none; color:#FFFFFF; font-size:15px; cursor:pointer; }
+  #musicbox button:hover { color:#FFD700; }
+  .center { text-align:center; }
+</style>
+</head>
+<body>
+<a name="top"></a>
+
+<!-- 1. 左上角背景音乐：点击按钮播放/暂停 -->
+<div id="musicbox">
+  <audio id="bgm" src="bgm.mp3" loop="loop" preload="auto"></audio>
+  <button onclick="toggleMusic()" id="musicBtn">&#9835; 播放背景音乐</button>
+</div>
+
+<div class="banner">
+  <h1>&#9835; 尤克里里社 招新啦 &#9835;</h1>
+  <p class="center" style="text-indent:0;">一把小小的尤克里里，四根弦，就能弹出整个夏天的快乐。<br>欢迎加入我们，一起拨动琴弦，唱响青春！</p>
+</div>
+
+<!-- 2. 五个指向本网页的锚点链接 -->
+<div class="nav">
+  <a href="#intro">社团简介</a>&nbsp;|&nbsp;
+  <a href="#activity">活动安排</a>&nbsp;|&nbsp;
+  <a href="#gallery">风采展示</a>&nbsp;|&nbsp;
+  <a href="#story">社员故事</a>&nbsp;|&nbsp;
+  <a href="#signup">在线报名</a>
+</div>
+
+<!-- ============ 社团简介 ============ -->
+<div class="section" id="intro">
+  <a name="intro"></a>
+  <h2>社团简介</h2>
+  <p>尤克里里社是本校最受学生欢迎的音乐类社团之一，成立于2018年秋天。社团以"让每个人都能快乐地弹唱"为宗旨，面向全校零基础的同学开放。四年来，我们从最初的十几名社员发展到如今两百余名正式社员，累计举办专场演出三十余场，参与校园文化节、迎新晚会、社团巡礼等校级活动四十余次，成为校园音乐文化中最亮眼的一抹色彩。</p>
+  <p>尤克里里（Ukulele）是一种源自夏威夷的四弦小吉他，体型小巧、音色温暖，琴弦为尼龙材质，按起来不伤手指，学习门槛极低。只要花上半小时学会三个基础和弦，就能弹唱第一首完整的歌曲。正因为如此，它被誉为"世界上最容易上手的乐器"，无论是完全没有音乐基础的小白，还是已经会弹吉他的进阶玩家，都能从中获得无穷乐趣。社团正是看中了这一乐器的独特魅力，希望把这种快乐分享给更多同学。</p>
+  <p>在日常活动中，我们每周固定开展两次常规教学：周三晚上是"零基础公开课"，由教学部的学长学姐手把手教大家认识琴弦、学习和弦与扫弦节奏；周六下午是"进阶提升课"，针对有一定基础的社员，讲授指弹技巧、节奏型变化、歌曲编配和舞台表现力等内容。除了常规教学，社团还设有弹唱组、指弹组、创作组和表演组四个兴趣小组，社员可以根据自己的喜好自由加入。每逢重大节日或学校活动，我们还会组织草坪音乐会、路演、联合专场等特色活动，让每一位社员都有登台展示的机会。</p>
+  <p>师资方面，社团聘请了校艺术中心的刘老师担任指导教师，同时建立了完善的"老带新"朋辈教学体系。每一位新入社的成员都会配有一位"琴伴"学长或学姐，在入社的第一个月里进行一对一辅导，保证你从零开始也能在两周内弹唱出第一首完整的歌曲。社团还定期邀请校外音乐人、独立乐队主唱来校举办分享会，带大家了解更广阔的音乐世界。</p>
+  <p>在这里，你收获的不仅仅是弹琴的技能。你能交到一群热爱音乐、热爱生活的朋友；你能在繁重的课业之余找到一方属于自己的小天地；你能在舞台上克服紧张、收获掌声与自信；你甚至能和志同道合的伙伴一起组乐队、写原创、录小样，把青春的旋律永远珍藏。尤克里里社不是一个只谈琴技的组织，它是一个温暖的大家庭。每学期期末的"星空弹唱会"上，大家围坐在操场草坪，点起小夜灯，一起唱歌、一起欢笑，那是很多社员在大学里最难忘的夜晚。</p>
+  <p>新的学期已经开始，我们真诚地邀请每一位喜欢音乐、热爱生活的同学加入尤克里里社。无论你有没有基础，无论你擅长唱歌还是喜欢安静地弹琴，这里都有一根琴弦为你而留。拨动琴弦，让快乐发声——尤克里里社，期待你的到来！</p>
+  <div class="back"><a href="#top">&#8593; 返回顶部</a></div>
+</div>
+
+<!-- ============ 活动安排 ============ -->
+<div class="section" id="activity">
+  <a name="activity"></a>
+  <h2>活动安排</h2>
+  <p>本学期尤克里里社的活动可以用"充实而精彩"来形容。从学期初的新成员见面会，到贯穿全学期的每周教学，再到春季草坪音乐节、校园艺术展演和期末汇报演出，每一个月都有值得期待的事情发生。我们既注重零基础社员的基础教学，也为进阶社员提供了大量登台锻炼的机会。为了方便大家安排时间，现将本学期主要活动安排公布如下，欢迎所有对尤克里里感兴趣的同学前来参加，所有活动均对全校师生免费开放。</p>
+
+  <!-- 3. 跨多行和跨多列的表格（参考 ex3_16） -->
+  <table border="1" cellpadding="8" cellspacing="0">
+    <tr>
+      <td colspan="4" align="center"><b>尤克里里社 2026 年春季学期活动安排表</b></td>
+    </tr>
+    <tr align="center">
+      <th>活动名称</th>
+      <th>时间</th>
+      <th>地点</th>
+      <th>负责人</th>
+    </tr>
+    <tr align="center">
+      <td>新成员见面会</td>
+      <td>3月7日（周六）19:00</td>
+      <td rowspan="2">音乐楼A101教室</td>
+      <td>社长 林同学</td>
+    </tr>
+    <tr align="center">
+      <td>尤克里里基础教学公开课</td>
+      <td>3月14日（周六）19:00</td>
+      <td>教学部 王同学</td>
+    </tr>
+    <tr align="center">
+      <td>每周零基础公开课</td>
+      <td>每周三 19:00—20:30</td>
+      <td>音乐楼A102教室</td>
+      <td>教学部</td>
+    </tr>
+    <tr align="center">
+      <td>每周进阶提升课</td>
+      <td>每周六 15:00—16:30</td>
+      <td>音乐楼A103教室</td>
+      <td>指弹组 陈同学</td>
+    </tr>
+    <tr align="center">
+      <td>春季草坪音乐节</td>
+      <td>4月12日（周日）15:00</td>
+      <td>东区大草坪</td>
+      <td>表演组</td>
+    </tr>
+    <tr align="center">
+      <td>校园文化艺术节展演</td>
+      <td>5月16日（周六）19:30</td>
+      <td>大学生活动中心</td>
+      <td>全体社员</td>
+    </tr>
+    <tr align="center">
+      <td>期末星空弹唱会暨汇报演出</td>
+      <td>6月20日（周六）19:00</td>
+      <td>西区操场草坪</td>
+      <td>社长 林同学</td>
+    </tr>
+  </table>
+
+  <p>温馨提示：以上活动的时间、地点如有临时调整，会在社团QQ群和招新群里第一时间通知，请各位社员和感兴趣的同学留意群消息。其中新成员见面会与尤克里里基础教学公开课均在音乐楼A101教室举行，见面会当天还会有现场教学小体验环节，第一次来的同学完全不用担心跟不上。</p>
+  <div class="back"><a href="#top">&#8593; 返回顶部</a></div>
+</div>
+
+<!-- ============ 风采展示 ============ -->
+<div class="section" id="gallery">
+  <a name="gallery"></a>
+  <h2>风采展示</h2>
+  <p>下面这张照片是我们在日常教学中的真实记录：暖黄色的灯光下，大家一起坐在音乐教室里，社长正在示范分解和弦，新社员们认真地模仿着指法。这样的画面，每周都在社团里上演。点击照片可以查看我们的社团介绍页面。</p>
+
+  <!-- 4. 插入图片，并实现点击图片超链接跳转到 club_intro.html（参考 ex3_19、ex3_20） -->
+  <div class="center">
+    <a href="club_intro.html">
+      <img src="photo.jpeg" alt="尤克里里社日常演奏照片" width="480" height="480">
+    </a>
+  </div>
+  <p class="center" style="text-indent:0;"><small>&#9654; 点击上方图片，查看社团活动介绍（跳转到 club_intro.html）</small></p>
+
+  <p>除了照片，我们还把一次社团排练的实况录制成了视频。视频里，大家围坐在一起合奏《夜空中最亮的星》，虽然第一次合排时还有些小瑕疵，但那种一起努力的快乐是真实的。来看一看我们的排练现场吧：</p>
+
+  <!-- 5. 导入视频（参考 ex3_25，使用 embed 标签） -->
+  <div class="center">
+    <embed src="video.mp4" width="560" height="400" loop="true" autostart="false" />
+  </div>
+  <p class="center" style="text-indent:0;"><small>&#9654; 尤克里里社日常排练视频（mp4 格式）</small></p>
+
+  <p>更多精彩瞬间，欢迎关注我们的社团活动，或者直接来现场感受。每一场演出、每一次排练、每一个笑声，都是尤克里里社最珍贵的记忆。期待下一张照片里，也有你的身影。</p>
+  <div class="back"><a href="#top">&#8593; 返回顶部</a></div>
+</div>
+
+<!-- ============ 社员故事 ============ -->
+<div class="section" id="story">
+  <a name="story"></a>
+  <h2>社员故事（节选）</h2>
+  <p>社团招新季，我们想和你分享一个普通社员的故事。故事的主人公叫小雨，她去年这个时候，也和你一样站在招新的展台前，犹豫着要不要填下那张报名表。</p>
+  <p>小雨是计算机学院的大一新生，性格内向，平时除了上课就是泡在图书馆。大一上学期快结束时，她在宿舍楼下看到尤克里里社在办草坪音乐会。那天傍晚，夕阳把操场染成金色，社团的同学们抱着琴坐在草地上，唱着一首《小手拉大手》。周围坐了一圈观众，大家跟着节奏轻轻晃着身子。小雨站在人群外围，突然觉得，那种大家在一起唱歌的氛围，好温暖。</p>
+  <p>散场后，她鼓起勇气走到展台前，小声问："我……完全没有基础，可以加入吗？"负责招新的学姐眼睛一亮："当然可以！我们社里百分之八十的同学都是零基础入社的，社长当年连五线谱都不认识呢！"小雨还是有点犹豫："可是我怕自己学不会，会拖大家后腿……"学姐笑了笑，拿出手机给她看了一段视频："你看，这是我刚入社第一个月录的，弹得磕磕绊绊。这是三个月后，已经能在台上弹唱了。只要你愿意每天练二十分钟，我们保证你也能做到。"</p>
+  <p>就这样，小雨在春季学期开学时正式加入了尤克里里社。入社第一天，她领到了一把社团公用琴，还配了一位"琴伴"——大三的学长阿哲。第一次社团活动，教学部教的是C、G、Am、F四个和弦。小雨的手指按在尼龙弦上，比想象中要软一些，但练了半小时，指尖还是红红的。阿哲学长坐在她旁边，一遍遍纠正她的按弦姿势："手腕放松，大拇指抵住琴颈后面，对，就是这样……你看，C和弦按好了，轻轻扫一下弦试试。"当小雨第一次完整地弹出C—G—Am—F的循环时，她开心得差点叫出来："我居然真的弹响了！"</p>
+  <p>接下来的日子，小雨每周三都准时出现在音乐楼A102教室。她发现社团的同学们都特别友好，谁弹错了大家就一起笑，然后互相帮忙找问题。一个月后，她已经能熟练转换四个基础和弦，跟着伴奏弹唱《小星星》《虫儿飞》这样的简单歌曲。两个月后，教学部开始教进阶节奏型——切音、扫弦、分解和弦，小雨学得格外认真，笔记本上密密麻麻记满了各种节奏型的"哒哒哒"口诀。</p>
+  <p>四月，社团筹备春季草坪音乐节，小雨鼓起勇气报名了一个合唱节目。那是她第一次登台。演出当天，站在台上看到台下黑压压的人群，她的腿止不住地发抖。社长走到她身边，轻声说："别怕，你就当是在教室里练习，看着我们，我们一起唱。"音乐响起，前奏过去，小雨开口的第一句声音还有些颤，但唱到副歌时，她看到台下的同学们都在跟着节奏挥手，紧张感一下子消失了。一首歌唱完，掌声响起来的那一刻，小雨觉得自己的眼眶有点湿。那晚她在朋友圈写道："原来站在舞台上唱歌，是这么快乐的一件事。"</p>
+  <p>期末的星空弹唱会上，小雨已经能弹唱五首完整的歌曲了。她坐在草地上，抱着社团发的纪念款小琴，和几十个社员一起合唱《夜空中最亮的星》。晚风凉凉的，头顶是星星，身边是朋友，琴声和歌声在夜色里飘得很远很远。小雨想，这大概就是她大学里做过的最正确的决定。</p>
+  <p>如今，小雨已经是社团弹唱组的骨干，也开始像当初的阿哲学长一样，手把手地教新社员按和弦。她说："我想把当初收到的这份温暖，继续传递下去。"这就是尤克里里社——不是让你变成多么厉害的演奏家，而是让你在琴声里，遇见更好的自己和一群值得珍惜的朋友。你，愿意成为下一个故事的主角吗？</p>
+  <div class="back"><a href="#top">&#8593; 返回顶部</a></div>
+</div>
+
+<!-- ============ 在线报名 ============ -->
+<div class="section" id="signup">
+  <a name="signup"></a>
+  <h2>尤克里里社在线报名表</h2>
+  <p>心动了？那就赶紧填写下面的报名表吧！填写完成后点击"提交"即可完成报名，我们会在三个工作日内通过手机或邮箱与你联系。有任何问题，欢迎在招新QQ群（群号见海报）里提问。尤克里里社，等你来拨响第一根琴弦！</p>
+
+  <!-- 7. 在线报名表单（参考 ex3_30，全部十项均在 table 中） -->
+  <form action="/cgi-bin/post-information" method="post">
+    <table border="1" cellpadding="8" cellspacing="0">
+      <tr>
+        <td width="150" align="center">姓名</td>
+        <td><input type="text" name="name" size="20">（请输入真实姓名）</td>
+      </tr>
+      <tr>
+        <td align="center">性别</td>
+        <td>
+          <input type="radio" name="gender" value="男" checked>男
+          <input type="radio" name="gender" value="女">女
+        </td>
+      </tr>
+      <tr>
+        <td align="center">出生日期</td>
+        <td>
+          <input type="text" name="year" size="4">年
+          <input type="text" name="month" size="2">月
+          <input type="text" name="day" size="2">日
+        </td>
+      </tr>
+      <tr>
+        <td align="center">手机</td>
+        <td><input type="text" name="phone" size="20"></td>
+      </tr>
+      <tr>
+        <td align="center">邮箱</td>
+        <td><input type="text" name="email" size="30"></td>
+      </tr>
+      <tr>
+        <td align="center">是否有乐器基础</td>
+        <td>
+          <input type="radio" name="foundation" value="有">有
+          <input type="radio" name="foundation" value="无" checked>无
+        </td>
+      </tr>
+      <tr>
+        <td align="center">兴趣方向</td>
+        <td>
+          <input type="checkbox" name="interest" value="弹唱">弹唱
+          <input type="checkbox" name="interest" value="指弹">指弹
+          <input type="checkbox" name="interest" value="原创创作">原创创作
+          <input type="checkbox" name="interest" value="舞台表演">舞台表演
+          <input type="checkbox" name="interest" value="乐队合奏">乐队合奏
+          <input type="checkbox" name="interest" value="音乐欣赏">音乐欣赏
+        </td>
+      </tr>
+      <tr>
+        <td align="center">年级</td>
+        <td>
+          <select name="grade" size="1">
+            <option value="大一" selected>大一</option>
+            <option value="大二">大二</option>
+            <option value="大三">大三</option>
+            <option value="大四">大四</option>
+            <option value="研究生">研究生</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">自我介绍</td>
+        <td>
+          <textarea name="intro" rows="5" cols="50">请简单介绍自己、以及加入尤克里里社的理由……</textarea>
+        </td>
+      </tr>
+      <tr>
+        <td align="center">是否服从活动安排</td>
+        <td>
+          <input type="radio" name="obey" value="是" checked>是
+          <input type="radio" name="obey" value="否">否
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="提交">
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="reset" value="重置">
+        </td>
+      </tr>
+    </table>
+  </form>
+  <div class="back"><a href="#top">&#8593; 返回顶部</a></div>
+</div>
+
+<hr>
+<p class="center" style="text-indent:0;">&#9835; 尤克里里社 &mdash; 拨动琴弦，让快乐发声 &#9835;<br>欢迎加入我们！</p>
+
+<script>
+  function toggleMusic() {
+    var audio = document.getElementById("bgm");
+    var btn = document.getElementById("musicBtn");
+    if (audio.paused) {
+      audio.play();
+      btn.innerHTML = "&#9834; 暂停音乐";
+    } else {
+      audio.pause();
+      btn.innerHTML = "&#9835; 播放背景音乐";
+    }
+  }
+</script>
+</body>
+</html>
